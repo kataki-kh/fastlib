@@ -1,0 +1,5 @@
+bootstrap431
+fontawesome5113
+jquery341
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
