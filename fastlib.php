@@ -44,7 +44,7 @@ if(get_option($string)==1)	{
 
 
 $location = $lib[$string];
-echo  $location;
+
 wp_enqueue_style( $string, plugin_dir_url('fastlib').$location.'.css' ,array(),'9.0.0',true);
 wp_enqueue_script( $string, plugin_dir_url('fastlib').$location.'.js', array('jquery'), '8.0.0', true );
 
@@ -52,11 +52,12 @@ wp_enqueue_script( $string, plugin_dir_url('fastlib').$location.'.js', array('jq
 }
 ///use it for all checked
 function check($check_values,$lib){
+	
 $count =count($check_values);
 for($i=0;$i<=$count;$i++){
-	echo $check_values[$i] .'</br>';
+	
 	if(get_option($check_values[$i])==1){
-		echo $lib[$check_values[$i]] .'</br>';
+		
 check_insert_add_lib($check_values[$i],$lib);
 	}
 }
